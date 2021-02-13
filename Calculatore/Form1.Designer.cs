@@ -43,33 +43,37 @@ namespace Calculatore
             // 
             // texAdadAval
             // 
-            this.texAdadAval.Location = new System.Drawing.Point(97, 28);
+            this.texAdadAval.Location = new System.Drawing.Point(74, 27);
+            this.texAdadAval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texAdadAval.Multiline = true;
             this.texAdadAval.Name = "texAdadAval";
-            this.texAdadAval.Size = new System.Drawing.Size(194, 56);
+            this.texAdadAval.Size = new System.Drawing.Size(146, 29);
             this.texAdadAval.TabIndex = 0;
             // 
             // texAdadDovom
             // 
-            this.texAdadDovom.Location = new System.Drawing.Point(456, 28);
+            this.texAdadDovom.Location = new System.Drawing.Point(342, 23);
+            this.texAdadDovom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texAdadDovom.Multiline = true;
             this.texAdadDovom.Name = "texAdadDovom";
-            this.texAdadDovom.Size = new System.Drawing.Size(194, 56);
+            this.texAdadDovom.Size = new System.Drawing.Size(146, 46);
             this.texAdadDovom.TabIndex = 1;
             // 
             // texMohasebe
             // 
-            this.texMohasebe.Location = new System.Drawing.Point(144, 211);
+            this.texMohasebe.Location = new System.Drawing.Point(108, 171);
+            this.texMohasebe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texMohasebe.Multiline = true;
             this.texMohasebe.Name = "texMohasebe";
-            this.texMohasebe.Size = new System.Drawing.Size(441, 56);
+            this.texMohasebe.Size = new System.Drawing.Size(332, 46);
             this.texMohasebe.TabIndex = 2;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(23, 120);
+            this.button1.Location = new System.Drawing.Point(17, 98);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(122, 53);
+            this.button1.Size = new System.Drawing.Size(43, 43);
             this.button1.TabIndex = 3;
             this.button1.Text = "+";
             this.button1.UseVisualStyleBackColor = true;
@@ -77,9 +81,10 @@ namespace Calculatore
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(189, 120);
+            this.button2.Location = new System.Drawing.Point(142, 98);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(122, 53);
+            this.button2.Size = new System.Drawing.Size(43, 43);
             this.button2.TabIndex = 4;
             this.button2.Text = "-";
             this.button2.UseVisualStyleBackColor = true;
@@ -87,9 +92,10 @@ namespace Calculatore
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(363, 120);
+            this.button3.Location = new System.Drawing.Point(272, 98);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(122, 53);
+            this.button3.Size = new System.Drawing.Size(43, 43);
             this.button3.TabIndex = 5;
             this.button3.Text = "*";
             this.button3.UseVisualStyleBackColor = true;
@@ -97,9 +103,10 @@ namespace Calculatore
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(540, 120);
+            this.button4.Location = new System.Drawing.Point(405, 98);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(122, 53);
+            this.button4.Size = new System.Drawing.Size(43, 43);
             this.button4.TabIndex = 6;
             this.button4.Text = "/";
             this.button4.UseVisualStyleBackColor = true;
@@ -108,35 +115,38 @@ namespace Calculatore
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 48);
+            this.label1.Location = new System.Drawing.Point(15, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(71, 17);
+            this.label1.Size = new System.Drawing.Size(55, 13);
             this.label1.TabIndex = 7;
             this.label1.Text = "Adad aval";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(363, 48);
+            this.label2.Location = new System.Drawing.Point(272, 39);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 17);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 8;
             this.label2.Text = "Adad dovom";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(64, 232);
+            this.label3.Location = new System.Drawing.Point(48, 188);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 17);
+            this.label3.Size = new System.Drawing.Size(57, 13);
             this.label3.TabIndex = 9;
             this.label3.Text = "Mohasebe";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 303);
+            this.ClientSize = new System.Drawing.Size(534, 246);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -147,6 +157,7 @@ namespace Calculatore
             this.Controls.Add(this.texMohasebe);
             this.Controls.Add(this.texAdadDovom);
             this.Controls.Add(this.texAdadAval);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
