@@ -39,38 +39,47 @@ namespace Calculatore
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.clearbtn = new System.Windows.Forms.Button();
+            this.showbtn = new System.Windows.Forms.Button();
+            this.texrez = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // texAdadAval
             // 
-            this.texAdadAval.Location = new System.Drawing.Point(74, 27);
+            this.texAdadAval.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.texAdadAval.Location = new System.Drawing.Point(74, 23);
             this.texAdadAval.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texAdadAval.Multiline = true;
             this.texAdadAval.Name = "texAdadAval";
-            this.texAdadAval.Size = new System.Drawing.Size(146, 29);
+            this.texAdadAval.Size = new System.Drawing.Size(146, 46);
             this.texAdadAval.TabIndex = 0;
             // 
             // texAdadDovom
             // 
+            this.texAdadDovom.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texAdadDovom.Location = new System.Drawing.Point(342, 23);
             this.texAdadDovom.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texAdadDovom.Multiline = true;
             this.texAdadDovom.Name = "texAdadDovom";
             this.texAdadDovom.Size = new System.Drawing.Size(146, 46);
             this.texAdadDovom.TabIndex = 1;
+            this.texAdadDovom.TextChanged += new System.EventHandler(this.texAdadDovom_TextChanged);
             // 
             // texMohasebe
             // 
+            this.texMohasebe.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.texMohasebe.Location = new System.Drawing.Point(108, 171);
             this.texMohasebe.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.texMohasebe.Multiline = true;
             this.texMohasebe.Name = "texMohasebe";
             this.texMohasebe.Size = new System.Drawing.Size(332, 46);
             this.texMohasebe.TabIndex = 2;
+            this.texMohasebe.TextChanged += new System.EventHandler(this.texMohasebe_TextChanged);
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(17, 98);
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(62, 99);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(43, 43);
@@ -81,7 +90,8 @@ namespace Calculatore
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(142, 98);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(187, 99);
             this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(43, 43);
@@ -92,7 +102,8 @@ namespace Calculatore
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(272, 98);
+            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.Location = new System.Drawing.Point(317, 99);
             this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(43, 43);
@@ -103,7 +114,8 @@ namespace Calculatore
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(405, 98);
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Location = new System.Drawing.Point(450, 99);
             this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(43, 43);
@@ -142,11 +154,44 @@ namespace Calculatore
             this.label3.TabIndex = 9;
             this.label3.Text = "Mohasebe";
             // 
+            // clearbtn
+            // 
+            this.clearbtn.Location = new System.Drawing.Point(323, 233);
+            this.clearbtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clearbtn.Name = "clearbtn";
+            this.clearbtn.Size = new System.Drawing.Size(170, 32);
+            this.clearbtn.TabIndex = 10;
+            this.clearbtn.Text = "Clear";
+            this.clearbtn.UseVisualStyleBackColor = true;
+            this.clearbtn.Click += new System.EventHandler(this.clearbtn_Click);
+            // 
+            // showbtn
+            // 
+            this.showbtn.Location = new System.Drawing.Point(62, 233);
+            this.showbtn.Margin = new System.Windows.Forms.Padding(2);
+            this.showbtn.Name = "showbtn";
+            this.showbtn.Size = new System.Drawing.Size(170, 32);
+            this.showbtn.TabIndex = 11;
+            this.showbtn.Text = "Show";
+            this.showbtn.UseVisualStyleBackColor = true;
+            this.showbtn.Click += new System.EventHandler(this.showbtn_Click);
+            // 
+            // texrez
+            // 
+            this.texrez.Location = new System.Drawing.Point(156, 286);
+            this.texrez.Multiline = true;
+            this.texrez.Name = "texrez";
+            this.texrez.Size = new System.Drawing.Size(247, 77);
+            this.texrez.TabIndex = 12;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(534, 246);
+            this.ClientSize = new System.Drawing.Size(534, 384);
+            this.Controls.Add(this.texrez);
+            this.Controls.Add(this.showbtn);
+            this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -178,6 +223,9 @@ namespace Calculatore
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button clearbtn;
+        private System.Windows.Forms.Button showbtn;
+        private System.Windows.Forms.TextBox texrez;
     }
 }
 

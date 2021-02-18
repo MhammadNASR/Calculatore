@@ -42,6 +42,43 @@ namespace Calculatore
             texMohasebe.Text = mohasebe.ToString();
         }
 
+        private void texAdadDovom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void clearbtn_Click(object sender, EventArgs e)
+        {
+            //Action<Control.ControlCollection> func = null;
+            //func = (controls) =>
+            //{
+            //    foreach (Control control in controls)
+            //    {
+            //        if ( control is TextBox)
+            //        {
+            //            (control as TextBox).Clear();
+            //        }
+            //        else
+            //        {
+            //            func(control.Controls);
+            //        }
+            //    }
+            //};
+            //func(Controls);
+            texAdadAval.Clear();
+            texAdadDovom.Clear();
+        }
+
+        private void texMohasebe_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void showbtn_Click(object sender, EventArgs e)
+        {
+            texrez.AppendText(texAdadAval + "   " + "amaliat morede nazar" + texAdadDovom + "    =    " + texMohasebe);
+        }
+
         private void Form1_Load(object sender, EventArgs e)
         {
 
