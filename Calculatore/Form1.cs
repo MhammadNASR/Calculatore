@@ -76,7 +76,17 @@ namespace Calculatore
 
         private void showbtn_Click(object sender, EventArgs e)
         {
-            texrez.AppendText(texAdadAval + "   " + "amaliat morede nazar" + texAdadDovom + "    =    " + texMohasebe);
+            //texrez.AppendText(texAdadAval + "   " + "amaliat morede nazar" + texAdadDovom + "    =    " + texMohasebe);
+            //richrez
+            string sent = texMohasebe.Text + " = " + texAdadAval + " + " + texAdadDovom;
+
+            richrez.AppendText(sent);
+            richrez.AppendText(Environment.NewLine);
+        }
+
+        private void texrez_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
